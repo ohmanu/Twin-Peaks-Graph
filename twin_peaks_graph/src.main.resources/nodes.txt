@@ -1,0 +1,145 @@
+CREATE (n:Person {name:"Dale Cooper", bio:"Investigates the murder of Laura Palmer using unorthodox methods, falls in love with Twin Peaks and all its rural life, fascinated with the paranormal. He practices Buddhism.", played_by:"Kyle MacLachlan", photo:"https://i1.sndcdn.com/artworks-000074852011-8k6m0t-t200x200.jpg"})
+
+CREATE (n:Person {name:"Albert Rosenfield", bio:"Abrasive forensics expert, whose arrogant façade hides a spiritual nature.", played_by:"Miguel Ferrer", photo:"https://media0.giphy.com/media/r0HMTLwDDd6pO/200_s.gif"})
+
+CREATE (n:Person {name:"Chester Desmond", bio:"Investigates murder of Teresa Banks, mysteriously disappears.", played_by:"Chris Isaak", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Desmond2.jpg"})
+
+CREATE (n:Person {name:"Sam Stanley", bio:"Forensics specialist, assists Desmond in the investigation of Teresa Banks' murder.", played_by:"Kiefer Sutherland", photo:"http://www.postavy.cz/foto/sam-stanley-foto.jpg"})
+
+CREATE (n:Person {name:"Phillip Jeffries", bio:"Long-lost FBI agent, who knows of the Lodges and their inhabitants.", played_by:"David Bowie", photo:"http://www.postavy.cz/foto/phillip-jeffries-foto.jpg"})
+
+CREATE (n:Person {name:"Roger Hardy", bio:"Agent working for Internal Affairs who temporarily suspends Cooper from the FBI.", played_by:"Clarence Williams III", photo:"http://img2.tvtome.com/i/tvc/gQ/16017.jpg"})
+
+CREATE (n:Person {name:"Denise Bryson", bio:"Transgender DEA agent who investigates drug allegations against Dale Cooper.", played_by:"David Duchovny", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/BrysonDenise.jpg"})
+
+CREATE (n:Person {name:"Harry S. Truman", bio:"Sheriff. Lover of Josie Packard and friend of Cooper. Helps him solve the Laura Palmer case.", played_by:"Michael Ontkean", photo:"http://www.postavy.cz/foto/harry-s-truman-foto.jpg"})
+
+CREATE (n:Person {name:"Deputy Andy Brennan", bio:"Dorky but brave deputy, on and off relationship with Lucy. Possibly father of her baby. Deciphered the Owl Cave petroglyph as a map.", played_by:"Harry Goaz", photo:"http://www.postavy.cz/foto/andy-brennan-foto.jpg"})
+
+CREATE (n:Person {name:"Deputy Hawk", bio:"Native American, expert tracker.", played_by:"Michael Horse", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Hawk.jpg"})
+
+CREATE (n:Person {name:"Lucy Moran", bio:"Ditzy Receptionist, on and off relationship with Deputy Brennan.", played_by:"Kimmy Robertson", photo:"http://www.postavy.cz/foto/lucy-moran-foto.jpg"})
+
+CREATE (n:Person {name:"Cappy", bio:"Young, male assistant at the police station.", played_by:"Ron Kirk", photo:"http://vignette3.wikia.nocookie.net/twinpeaks/images/a/a6/Cappy.jpg/revision/latest?cb=20151025020856"})
+
+CREATE (n:Person {name:"Gordon Cole", bio:"Regional Bureau Chief, known to shout because he is hard-of-hearing.", played_by:"David Lynch", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Cole.jpg"})
+
+CREATE (n:Person {name:"Laura Palmer", bio:"Murder victim and the center of the story, linked to almost everyone in Twin Peaks.", played_by:"Sheryl Lee", photo:"http://cdn.mos.cms.futurecdn.net/ba9626a6bcfac8303cdd87f77cd6b24c-1200-80.jpg"})
+
+CREATE (n:Person {name:"Leland Palmer", bio:"Laura's father, vessel for BOB, lawyer by profession and counsel for Ben Horne and the Great Northern Lodge.", played_by:"Ray Wise", photo:"http://www.postavy.cz/foto/leland-palmer-foto.jpg"})
+
+CREATE (n:Person {name:"Sarah Palmer", bio:"Laura's mother.", played_by:"Grace Zabriskie", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/PalmerSarah.jpg"})
+
+CREATE (n:Person {name:"Maddy Ferguson", bio:"Laura's nearly identical cousin.", played_by:"Sheryl Lee", photo:"http://www.postavy.cz/foto/maddy-ferguson-foto.jpg"})
+
+CREATE (n:Person {name:"Dr. William Hayward", bio:"Doctor of Twin Peaks, assists on the autopsy of Laura Palmer.", played_by:"Warren Frost", photo:"http://www.postavy.cz/foto/william-doc-hayward-foto.jpg"})
+
+CREATE (n:Person {name:"Eileen Hayward", bio:"Doctor Hayward's wheelchair-using wife.", played_by:"Mary Jo Deschanel", photo:"http://www.postavy.cz/foto/eileen-hayward-foto.jpg"})
+
+CREATE (n:Person {name:"Donna Hayward", bio:"Laura's best friend, lover of James Hurley.", played_by:"Lara Flynn Boyle & Moira Kelly", photo:"https://media1.giphy.com/media/2HNPdmVvoVOh2/200_s.gif"})
+
+CREATE (n:Person {name:"Harriet Hayward", bio:"Donna's younger sister.", played_by:"Jessica Wallenfels", photo:"http://ichthyosapiens.com/Film/TwinPeaks/Hayward-Harriet.jpg"})
+
+CREATE (n:Person {name:"Gersten Hayward", bio:"Donna's youngest sister.", played_by:"Alicia Witt", photo:"http://visittwinpeaks.com/wp-content/uploads/2016/07/Gersten-Hayward.jpg"})
+
+CREATE (n:Person {name:"Ben Horne", bio:"Wealthy businessman, owns Great Northern Hotel, Horne's Department Store and a brothel on the Canada–US border.", played_by:"Richard Beymer", photo:"http://www.postavy.cz/foto/benjamin-horne-foto.jpg"})
+
+CREATE (n:Person {name:"Jerry Horne", bio:"Ben's playboy brother and business partner.", played_by:"David Patrick Kelly", photo:"http://www.postavy.cz/foto/jerry-horne-foto.jpg"})
+
+CREATE (n:Person {name:"Sylvia Horne", bio:"Ben's constantly angry wife.", played_by:"Jan D'Arcy", photo:"http://anniecordier.chez.com/images/cast/sylvia.jpg"})
+
+CREATE (n:Person {name:"Audrey Horne", bio:"Ben's sultry teenage daughter.", played_by:"Sherilyn Fenn", photo:"http://rs1228.pbsrc.com/albums/ee443/priscillapresley/celebrity/Sherilyn_Fenn_audrey_horne_twin_peaks_139.png~c200"})
+
+CREATE (n:Person {name:"Johnny Horne", bio:"Ben's mentally handicapped son, tutored by Laura.", played_by:"Robert Davenport & Robert Bauer", photo:"http://twinpeaksfans.com/files/2015/06/Johnny-Horne.jpg"})
+
+CREATE (n:Person {name:"Josie Packard", bio:"Widowed sawmill owner with a dark past, lover of Sheriff Truman, tutored by Laura.", played_by:"Joan Chen", photo:"https://31.media.tumblr.com/1189a13f1b9a983c1193fa28f881b557/tumblr_inline_nf13j02Nse1suq21n.png"})
+
+CREATE (n:Person {name:"Andrew Packard", bio:"Late owner of the Packard Sawmill and husband of Josie.", played_by:"Dan O'Herlihy", photo:"http://www.postavy.cz/foto/andrew-packard-foto.jpg"})
+
+CREATE (n:Person {name:"Catherine Martell", bio:"Sister of Andrew, schemes with secret lover Ben Horne to burn down the sawmill.", played_by:"Piper Laurie", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/MartellCatherine.jpg"})
+
+CREATE (n:Person {name:"Pete Martell", bio:"Long-suffering husband of Catherine, fishing and chess enthusiast, found Laura's body.", played_by:"Jack Nance", photo:"http://thumbs.web.sapo.io/?W=200&H=200&crop=center&tv=1&delay_optim=1&epic=V2%3ANkRfpMAHUEPfX8%2B6%2BOf98lAg4vnB6CUl6Nzx5%2FG2m4ed5cqx4Y7UoYLtoSBzaCtN1AuVlRw6SrdY3OxM3IWqXYTUNK8%2BBtUBePbjE5LCwCWaghgu0WNdJ9DGDz8tk8cn"})
+
+CREATE (n:Person {name:"Major Garland Briggs", bio:"Intelligent and gifted Air Force officer involved in Project Blue Book, deep-space monitoring, and the woods surrounding Twin Peaks.", played_by:"Don S. Davis", photo:"http://www.postavy.cz/foto/garland-briggs-foto.jpg"})
+
+CREATE (n:Person {name:"Bobby Briggs", bio:"Rebellious teenager, captain of the football team, boyfriend of Laura Palmer, secret lover of Shelly Johnson.", played_by:"Dana Ashbrook", photo:"http://rs1069.pbsrc.com/albums/u480/allvipus/allvip/Dana_Ashbrook_BobbyBriggs_Twin_Peaks_1990_44.jpg~c200"})
+
+CREATE (n:Person {name:"Ed Hurley", bio:"Owner of Big Ed's Gas Farm, secret lover of Norma Jennings.", played_by:"Everett McGill", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/HurleyBigEd2.jpg"})
+
+CREATE (n:Person {name:"Nadine Hurley", bio:"Ed's one-eyed, super-strong, curtain drape-obsessed wife.", played_by:"Wendy Robie", photo:"http://www.postavy.cz/foto/nadine-hurley-foto.jpg"})
+
+CREATE (n:Person {name:"James Hurley", bio:"Ed's nephew, secret lover of Laura Palmer, later lover of Donna Hayward.", played_by:"James Marshall", photo:"http://www.postavy.cz/foto/james-hurley-foto.jpg"})
+
+CREATE (n:Person {name:"Norma Jennings", bio:"Double-R Diner owner, lover of Big Ed Hurley, organizer of Meals on Wheels with Laura.", played_by:"Peggy Lipton", photo:"http://www.postavy.cz/foto/norma-jennings-foto.jpg"})
+
+CREATE (n:Person {name:"Hank Jennings", bio:"Norma's husband, criminal on parole, conspirator with Josie Packard.", played_by:"Chris Mulkey", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/JenningsHank.jpg"})
+
+CREATE (n:Person {name:"Vivian Smythe Niles", bio:"Mother of Norma and Annie, is secretly a food critic.", played_by:"Jane Greer", photo:"https://pbs.twimg.com/profile_images/3169259536/e824147242f59dd306706173d354689c_400x400.jpeg"})
+
+CREATE (n:Person {name:"Annie Blackburn", bio:"Younger sister of Norma, an ex-nun with a troubled past.", played_by:"Heather Graham", photo:"http://www.postavy.cz/foto/annie-blackburn-foto.jpg"})
+
+CREATE (n:Person {name:"Leo Johnson", bio:"Trucker and drug-runner, had a sexual relationship with Laura Palmer.", played_by:"Eric Da Re", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/JohnsonLeo1.jpg"})
+
+CREATE (n:Person {name:"Shelly Johnson", bio:"Abused young wife of Leo, waitress at Norma's diner, secret lover of Bobby Briggs.", played_by:"Mädchen Amick", photo:"http://www.postavy.cz/foto/shelly-johnson-foto.jpg"})
+
+CREATE (n:Person {name:"Jacques Renault", bio:"Canadian croupier, drug-runner, and bartender at the Roadhouse. Had sexual relationship with Laura Palmer.", played_by:"Walter Olkewicz", photo:"https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_200,w_200/v1411168497/zzihet7nj5h3v3qu71wz.jpg"})
+
+CREATE (n:Person {name:"Bernard Renault", bio:"Youngest Renault brother, mules drugs over the border.", played_by:"Clay Wilcox", photo:"http://anniecordier.chez.com/images/cast/bernard.jpg"})
+
+CREATE (n:Person {name:"Jean Renault", bio:"Oldest and most dangerous Renault brother, veteran criminal, insurance agent.", played_by:"Michael Parks", photo:"http://www.postavy.cz/foto/jean-renault-foto.jpg"})
+
+CREATE (n:Person {name:"Blackie O'Reilly", bio:"The madame of One Eyed Jacks.", played_by:"Victoria Catlin", photo:"http://www.postavy.cz/foto/blackie-o-reilly-foto.jpg"})
+
+CREATE (n:Person {name:"Nancy O'Reilly", bio:"Blackie's sister, lover of Jean Renault.", played_by:"Galyn Görg", photo:"http://vignette2.wikia.nocookie.net/twinpeaks/images/c/c5/Nancy-Portal.jpg/revision/latest?cb=20100415232809"})
+
+CREATE (n:Person {name:"Ronette Pulaski", bio:"Former employee of Horne's Department Store and One Eyed Jacks, was with Laura the night she died.", played_by:"Phoebe Augustine", photo:"http://www.postavy.cz/foto/ronette-pulaski-foto.jpg"})
+
+CREATE (n:Person {name:"Dr. Lawrence Jacoby", bio:"Eccentric former psychiatrist of Laura with an obsession for Hawaii.", played_by:"Russ Tamblyn", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Jacoby2.jpg"})
+
+CREATE (n:Person {name:"Mike Nelson", bio:"Bobby's best friend, high school wrestling champ, ex-boyfriend of Donna.", played_by:"Gary Hershberger", photo:"http://www.postavy.cz/foto/mike-nelson-foto.jpg"})
+
+CREATE (n:Person {name:"The Log Lady", bio:"Margaret Lanterman. Mystic, widow who divines through a log she carries with her everywhere.", played_by:"Catherine E. Coulson", photo:"http://rs193.pbsrc.com/albums/z72/kentaaros/humour/010-The-Log-Lady.jpg~c200"})
+
+CREATE (n:Person {name:"Harold Smith", bio:"Agoraphobic horticulturist, Laura's Meals on Wheels friend.", played_by:"Lenny Von Dohlen", photo:"http://www.postavy.cz/foto/harold-smith-foto.jpg"})
+
+CREATE (n:Person {name:"Emory Battis", bio:"Store manager of Horne's Department Store, recruits girls from the perfume counter to work at One Eyed Jack's.", played_by:"Don Amendolia", photo:"https://s-media-cache-ak0.pinimg.com/736x/c1/8b/2f/c18b2fe0122a86feff2ca69645e4a5d0.jpg"})
+
+CREATE (n:Person {name:"Dick Tremayne", bio:"Pretentious employee of Men's Department at Horne's, ex-lover of Lucy.", played_by:"Ian Buchanan", photo:"http://www.postavy.cz/foto/dick-tremayne-foto.jpg"})
+
+CREATE (n:Person {name:"Room Service Waiter", bio:"Elderly bellhop at the Great Northern with a link to the Lodges and the Giant in particular. Nicknamed Señor Droolcup by Albert Rosenfield.", played_by:"Hank Worden", photo:"https://s-media-cache-ak0.pinimg.com/236x/af/42/2a/af422aa9f5c49921d7031e19f53a2c29.jpg"})
+
+CREATE (n:Person {name:"Roadhouse Singer", bio:"Angelic singer at the Roadhouse, known for her dream-like voice.", played_by:"Julee Cruise", photo:"http://hilobrow.com/wp-content/uploads/2015/12/cruise-thumb-200x200.png"})
+
+CREATE (n:Person {name:"Mayor Dwayne Milford", bio:"Long-time mayor of Twin Peaks, has an ongoing feud with his brother Dougie.", played_by:"John Boylan", photo:"http://www.postavy.cz/foto/dwayne-milford-foto.jpg"})
+
+CREATE (n:Person {name:"Dougie Milford", bio:"Publisher of the Twin Peaks Gazette local newspaper, known to marry often.", played_by:"Tony Jay", photo:"http://vignette1.wikia.nocookie.net/doblaje/images/1/10/Dougie_Milford-_Twin_Peaks.jpg/revision/latest?cb=20160713233740&path-prefix=es"})
+
+CREATE (n:Person {name:"Lana Budding Milford", bio:"Seductive fiancée of Dwayne, and widow of Dougie, known to charm almost any man that's around her.", played_by:"Robyn Lively", photo:"https://pbs.twimg.com/profile_images/2925637338/ef3248a2558925cc925a68fda51f6ca7_400x400.jpeg"})
+
+CREATE (n:Person {name:"Evelyn Marsh", bio:"Rich woman who James Hurley runs into, and who is beaten by her husband.", played_by:"Annette McCarthy", photo:"http://cdn.chud.com/a/a8/200x200px-ZC-a87a31c0_EvelynMarsh01.jpeg"})
+
+CREATE (n:Person {name:"Malcolm Sloan", bio:"A man pretending to be Evelyn's brother.", played_by:"Nicholas Love", photo:"http://vignette3.wikia.nocookie.net/twinpeaks/images/2/2c/Malcolm-Portal.jpg/revision/latest?cb=20100417113635"})
+
+CREATE (n:Person {name:"Thomas Eckhardt", bio:"Former business partner of Andrew Packard, obsessively in love with Josie Packard.", played_by:"David Warner", photo:"http://www.postavy.cz/foto/thomas-eckhardt-foto.jpg"})
+
+CREATE (n:Person {name:"Jones", bio:"Thomas Eckhardt's assistant.", played_by:"Brenda Strong", photo:"http://coolspotters.com/files/photos/214350/brenda-strong-and-twin-peaks-gallery.png"})
+
+CREATE (n:Person {name:"Teresa Banks", bio:"First victim, found almost exactly one year before the murder of Laura Palmer.", played_by:"Pamela Gidley", photo:"http://www.postavy.cz/foto/teresa-banks-foto.jpg"})
+
+CREATE (n:Person {name:"Windom Earle", bio:"Psychotic but brilliant ex-partner of Cooper, desires the powers of the Lodges.", played_by:"Kenneth Welsh", photo:"http://www.postavy.cz/foto/windom-earle-foto.jpg"})
+
+CREATE (n:Person {name:"John Justice Wheeler", bio:"Friend of Ben Horne and later falls in love with Audrey Horne.", played_by:"Billy Zane", photo:"http://www.postavy.cz/foto/john-justice-wheeler-foto.jpg"})
+
+CREATE (n:Person {name:"Judy Swain", bio:"Foster care aid for orphan child.", played_by:"Molly Shannon", photo:"https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr02/2013/8/19/18/enhanced-buzz-3687-1376951218-29.jpg"})
+
+CREATE (n:Person {name:"The Man from Another Place", bio:"Enigmatic dwarf, inhabitant of the Red Room.", played_by:"Michael J. Anderson", photo:"https://bfmbrainfall.files.wordpress.com/2015/10/theman.jpg?w=200&h=200&crop=1"})
+
+CREATE (n:Person {name:"MIKE", bio:"Spirit, former associate and now opponent of BOB, inhabits shoe salesman Phillip Gerard, The One-Armed Man.", played_by:"Al Strobel", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Gerard.jpg"})
+
+CREATE (n:Person {name:"BOB", bio:"Malevolent spirit, haunts the woods and inhabits humans.", played_by:"Frank Silva", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/BOB3.jpg"})
+
+CREATE (n:Person {name:"The Giant", bio:"A supernatural giant who appears at key moments and provides Cooper with cryptic clues.", played_by:"Carel Struycken", photo:"http://img.photobucket.com/albums/v18/laughingacademy/Twin%20Peaks/Personae/Giant.jpg"})
+
+CREATE (n:Person {name:"Mrs Tremond/Chalfont", bio:"Link to the Lodges and intentions unclear.", played_by:"Frances Bay", photo:"http://www.postavy.cz/foto/mrs-tremond-foto.jpg"})
+
+CREATE (n:Person {name:"Pierre Tremond/Chalfont", bio:"Mrs Tremond/Chalfont's grandson, link to the Lodges and intentions unclear.", played_by:"Austin Jack Lynch & Jonathan J. Leppell", photo:"http://rs735.pbsrc.com/albums/ww358/BlackOut0189/Twin%20Peaks/pierre.png~c200"})
