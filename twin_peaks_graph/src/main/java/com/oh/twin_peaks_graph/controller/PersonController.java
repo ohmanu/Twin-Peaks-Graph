@@ -15,6 +15,7 @@ import com.oh.twin_peaks_graph.repository.PersonRepository;
 
 @Controller
 public class PersonController {
+	
 	private Person person;
 
 	@Autowired
@@ -26,12 +27,6 @@ public class PersonController {
 
 	public void setPerson(Person person) {
 		this.person = person;
-	}
-
-	public String create() {
-		repo.save(person);
-
-		return "ok";
 	}
 
 	@RequestMapping(value = "/person/{id}", method = RequestMethod.GET, headers = "Accept=text/html")

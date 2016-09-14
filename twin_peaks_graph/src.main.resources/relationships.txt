@@ -1,0 +1,323 @@
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Laura Palmer" and d.name = "Leland Palmer" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Laura Palmer" and d.name = "Sarah Palmer" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Laura Palmer" and d.name = "Maddy Ferguson" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Donna Hayward" and d.name = "Dr. William Hayward" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Donna Hayward" and d.name = "Eileen Hayward" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Donna Hayward" and d.name = "Harriet Hayward" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Donna Hayward" and d.name = "Gersten Hayward" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Audrey Horne" and d.name = "Ben Horne" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Audrey Horne" and d.name = "Jerry Horne" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Audrey Horne" and d.name = "Sylvia Horne" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Audrey Horne" and d.name = "Johnny Horne" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Josie Packard" and d.name = "Andrew Packard" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Josie Packard" and d.name = "Catherine Martell" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Josie Packard" and d.name = "Pete Martell" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Bobby Briggs" and d.name = "Major Garland Briggs" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Bobby Briggs" and d.name = "Betty Briggs" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "James Hurley" and d.name = "Ed Hurley" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "James Hurley" and d.name = "Nadine Hurley" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Norma Jennings" and d.name = "Hank Jennings" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Norma Jennings" and d.name = "Vivian Smythe Niles" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Shelly Johnson" and d.name = "Leo Johnson" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Jean Renault" and d.name = "Jacques Renault" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Jean Renault" and d.name = "Bernard Renault" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Blackie O'Reilly" and d.name = "Nancy O'Reilly" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Mayor Dwayne Milford" and d.name = "Dougie Milford" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Mayor Dwayne Milford" and d.name = "Lana Budding Milford" 
+CREATE (l)-[r:FAMILY]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Mrs Tremond/Chalfont" and d.name = "Pierre Tremond/Chalfont" 
+CREATE (l)-[r:FAMILY]->(d)
+
+match (l:Person),(d:Person) 
+where l.name = "Laura Palmer" and d.name = "Bobby Briggs" 
+CREATE (l)-[r:ROMANTIC]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Laura Palmer" and d.name = "James Hurley" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Laura Palmer" and d.name = "James Hurley" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Dale Cooper" and d.name = "Annie Blackburn" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Donna Hayward" and d.name = "Mike Nelson" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Audrey Horne" and d.name = "John Justice Wheeler" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "James Hurley" and d.name = "Evelyn Marsh" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Evelyn Marsh" and d.name = "Malcolm Sloan" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Lucy Moran" and d.name = "Deputy Andy Brennan" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Lucy Moran" and d.name = "Dick Tremayne" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Harry S. Truman" and d.name = "Josie Packard" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Norma Jennings" and d.name = "Ed Hurley" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Nadine Hurley" and d.name = "Mike Nelson" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Ben Horne" and d.name = "Catherine Martell" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Ronette Pulaski" and d.name = "Jacques Renault" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Ronette Pulaski" and d.name = "Leo Johnson" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Leland Palmer" and d.name = "Teresa Banks" 
+CREATE (l)-[r:SEXUAL]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Leland Palmer" and d.name = "Sarah Palmer" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Hank Jennings" and d.name = "Norma Jennings" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Dr. William Hayward" and d.name = "Eileen Hayward" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Mayor Dwayne Milford" and d.name = "Lana Budding Milford" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Dougie Milford" and d.name = "Lana Budding Milford" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Major Garland Briggs" and d.name = "Betty Briggs" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Pete Martell" and d.name = "Catherine Martell" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Leo Johnson" and d.name = "Shelly Johnson" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Ed Hurley" and d.name = "Nadine Hurley" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Ben Horne" and d.name = "Sylvia Horne" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person)
+WHERE l.name = "Andrew Packard" and d.name = "Josie Packard" 
+CREATE (l)-[r:MARRIED]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Donna Hayward" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Harold Smith" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Johnny Horne" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Teresa Banks" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Ronette Pulaski" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Laura Palmer" and d.name = "Dr. Lawrence Jacoby" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Donna Hayward" and d.name = "Harold Smith" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Donna Hayward" and d.name = "Maddy Ferguson" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "James Hurley" and d.name = "Maddy Ferguson" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Harry S. Truman" 
+CREATE (l)-[r:FRIENDSHIP]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Albert Rosenfield" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Denise Bryson" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Gordon Cole" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Windom Earle" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Dale Cooper" and d.name = "Phillip Jeffries" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Windom Earle" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Albert Rosenfield" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Chester Desmond" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Sam Stanley" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Phillip Jeffries" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Roger Hardy" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Gordon Cole" and d.name = "Denise Bryson" 
+CREATE (l)-[r:FBI]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Harry S. Truman" and d.name = "Deputy Andy Brennan" 
+CREATE (l)-[r:SHERIFF_DEPARTMEN]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Harry S. Truman" and d.name = "Deputy Hawk" 
+CREATE (l)-[r:SHERIFF_DEPARTMEN]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Harry S. Truman" and d.name = "Lucy Moran" 
+CREATE (l)-[r:SHERIFF_DEPARTMEN]->(d)
+
+MATCH (l:Person),(d:Person) 
+WHERE l.name = "Harry S. Truman" and d.name = "Cappy" 
+CREATE (l)-[r:SHERIFF_DEPARTMEN]->(d)
