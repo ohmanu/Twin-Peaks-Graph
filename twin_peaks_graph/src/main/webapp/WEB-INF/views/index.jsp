@@ -3,4 +3,5 @@
 
 <div>
 	<a href="people">PEOPLE</a>
+	<a href="create">CREATE</a>
 </div>
