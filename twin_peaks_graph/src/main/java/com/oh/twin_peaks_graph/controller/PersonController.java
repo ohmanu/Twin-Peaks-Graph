@@ -51,17 +51,31 @@ public class PersonController {
 		return "/person/people";
 	}
 	
-	@RequestMapping(value = "/create", method = RequestMethod.GET)
+	@RequestMapping(value = "/create", method = RequestMethod.GET, headers = "Accept=text/html")
 	public String createPerson(Model model) {
 		model.addAttribute("person", new Person());
 
 		return "/person/create";
 	}
 	
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	@RequestMapping(value = "/save", method = RequestMethod.POST, headers = "Accept=text/html")
 	public String savePerson(@ModelAttribute("person") Person person) {
 		repo.save(person);
 
 		return "redirect:people";
+	}
+	
+	@RequestMapping(value = "/select", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String selectPerson(Model model) {
+		Iterable<Person> people = repo.findAll();
+		
+		if (people != null) {
+			model.addAttribute("people", IteratorUtil.asCollection(people));
+		} else {
+			model.addAttribute("people", Collections.emptyList());
+		}
+
+
+		return "/person/select";
 	}
 }
