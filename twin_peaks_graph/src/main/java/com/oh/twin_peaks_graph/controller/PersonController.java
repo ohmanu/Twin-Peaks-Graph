@@ -65,17 +65,10 @@ public class PersonController {
 		return "redirect:people";
 	}
 	
-	@RequestMapping(value = "/select", method = RequestMethod.GET, headers = "Accept=text/html")
-	public String selectPerson(Model model) {
-		Iterable<Person> people = repo.findAll();
+	@RequestMapping(value = "/delete/{id}", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String deletePerson(Model model, @PathVariable String id) {
+		repo.delete(Long.valueOf(id));
 		
-		if (people != null) {
-			model.addAttribute("people", IteratorUtil.asCollection(people));
-		} else {
-			model.addAttribute("people", Collections.emptyList());
-		}
-
-
-		return "/person/select";
+		return "redirect:../people";
 	}
 }

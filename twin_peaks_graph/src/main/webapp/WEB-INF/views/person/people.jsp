@@ -11,6 +11,7 @@
 				<li>
 					<h3><a href="person/${person.id}">${person.name}</a></h3>
 					<p><img src="${person.photo}" alt="${person.name}"/></p>
+					<p><a href="delete/${person.id}">delete</a></p>
 				</li>
 			</c:forEach>
 		</ul>
