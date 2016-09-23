@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.oh.twin_peaks_graph.domain.Person;
+import com.oh.twin_peaks_graph.domain.PersonRelationship;
 import com.oh.twin_peaks_graph.repository.PersonRepository;
 
 @Controller
@@ -39,14 +40,13 @@ public class PersonController {
 	}
 
 	@RequestMapping(value = "/people", method = RequestMethod.GET, headers = "Accept=text/html")
-	public String graphPeople(Model model) {
+	public String listPeople(Model model) {
 		Iterable<Person> people = repo.findAll();
 		
-		if (people != null) {
+		if (people != null)
 			model.addAttribute("people", IteratorUtil.asCollection(people));
-		} else {
+		else
 			model.addAttribute("people", Collections.emptyList());
-		}
 
 		return "/person/people";
 	}
@@ -70,5 +70,18 @@ public class PersonController {
 		repo.delete(Long.valueOf(id));
 		
 		return "redirect:../people";
+	}
+	
+	@RequestMapping(value = "/relationship", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String graphPeople(Model model) {
+		Iterable<PersonRelationship> people = repo.getRelationship("MARRIED");
+		
+		if (people != null) {
+			model.addAttribute("people", IteratorUtil.asCollection(people));
+		} else {
+			model.addAttribute("people", Collections.emptyList());
+		}
+
+		return "/person/graph";
 	}
 }
