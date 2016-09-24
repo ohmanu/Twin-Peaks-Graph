@@ -82,6 +82,6 @@ public class PersonController {
 			model.addAttribute("people", Collections.emptyList());
 		}
 
-		return "/person/graph";
+		return "/graph/graph";
 	}
 }
