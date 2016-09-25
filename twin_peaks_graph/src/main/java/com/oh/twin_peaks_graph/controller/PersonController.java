@@ -72,9 +72,9 @@ public class PersonController {
 		return "redirect:../people";
 	}
 	
-	@RequestMapping(value = "/relationship", method = RequestMethod.GET, headers = "Accept=text/html")
-	public String graphPeople(Model model) {
-		Iterable<PersonRelationship> people = repo.getRelationship("MARRIED");
+	@RequestMapping(value = "/relationship/{type}", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String graphPeople(Model model, @PathVariable String type) {
+		Iterable<PersonRelationship> people = repo.getRelationship(type);
 		
 		if (people != null) {
 			model.addAttribute("people", IteratorUtil.asCollection(people));
@@ -82,6 +82,6 @@ public class PersonController {
 			model.addAttribute("people", Collections.emptyList());
 		}
 
-		return "/graph/graph";
+		return "/person/graph";
 	}
 }

@@ -3,5 +3,6 @@
 
 <div>
 	<a href="people">PEOPLE</a> | 
-	<a href="create">CREATE</a>
+	<a href="create">CREATE</a> | 
+	<a href="relationship/SEXUAL">SEXUAL</a>
 </div>

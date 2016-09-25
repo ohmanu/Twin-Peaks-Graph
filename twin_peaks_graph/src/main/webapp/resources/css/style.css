@@ -1,3 +1,8 @@
+html {
+	background-image: url("http://i778.photobucket.com/albums/yy70/Oh-Manu/Twin%20Peaks%20Graph/dark_forest_zps2mquvc6z.png");
+	background-size: cover;
+}
+
 body { 
   font: 14px helvetica neue, helvetica, arial, sans-serif;
 }
@@ -8,18 +13,4 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-}
-
-#eat {
-  position: absolute;
-  left: 1em;
-  top: 1em;
-  font-size: 1em;
-  z-index: -1;
-  color: #c88;
-}
-
-h2 {
-	padding-top:600px;
-	color: #c88;
 }
