@@ -17,19 +17,9 @@ import com.oh.twin_peaks_graph.repository.PersonRepository;
 
 @Controller
 public class PersonController {
-	
-	private Person person;
 
 	@Autowired
 	private PersonRepository repo;
-
-	public Person getPerson() {
-		return person;
-	}
-
-	public void setPerson(Person person) {
-		this.person = person;
-	}
 
 	@RequestMapping(value = "/person/{id}", method = RequestMethod.GET, headers = "Accept=text/html")
 	public String singlePersonView(Model model, @PathVariable String id) {
@@ -55,7 +45,14 @@ public class PersonController {
 	public String createPerson(Model model) {
 		model.addAttribute("person", new Person());
 
-		return "/person/create";
+		return "/person/form";
+	}
+	
+	@RequestMapping(value = "/edit/{id}", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String editPerson(Model model, @PathVariable String id) {
+		model.addAttribute("person", repo.findOne(Long.valueOf(id)));
+
+		return "/person/form";
 	}
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST, headers = "Accept=text/html")
@@ -76,11 +73,10 @@ public class PersonController {
 	public String graphPeople(Model model, @PathVariable String type) {
 		Iterable<PersonRelationship> people = repo.getRelationship(type);
 		
-		if (people != null) {
+		if (people != null)
 			model.addAttribute("people", IteratorUtil.asCollection(people));
-		} else {
+		else
 			model.addAttribute("people", Collections.emptyList());
-		}
 
 		return "/person/graph";
 	}
