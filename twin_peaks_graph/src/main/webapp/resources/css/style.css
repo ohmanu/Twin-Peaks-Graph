@@ -4,13 +4,68 @@ html {
 }
 
 body { 
-  font: 14px helvetica neue, helvetica, arial, sans-serif;
+	font: 14px helvetica neue, helvetica, arial, sans-serif;
+	color: #FFF;
+}
+
+h1 {
+	margin: 0 auto;
+	font-size: 54px;	
+}
+
+a {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.sexual {
+	color: #8f0e2e;
+}
+
+a.fbi {
+	color: #626262;
+}
+
+a.family {
+	color: #009045;	
+}
+
+a.friendship {
+	color: #009bdb;	
+}
+
+img.logo {
+	width: 350px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+img.powered {
+	width: 75px;
+}
+
+.menu {
+	width: 550px;
+	padding-top: 150px;
+	margin: 0 auto;
+}
+
+.menu a {
+	font-size: 18px;
 }
 
 #cy {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
+

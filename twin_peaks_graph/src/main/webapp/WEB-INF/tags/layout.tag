@@ -10,9 +10,5 @@
 	<section class="content">
 		<jsp:doBody />
 	</section>
-	
-	<footer class="footer">
-		Manuel Casas ©
-	</footer>
 </body>
 </html>

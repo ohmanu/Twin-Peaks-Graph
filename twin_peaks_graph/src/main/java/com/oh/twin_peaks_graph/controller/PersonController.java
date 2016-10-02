@@ -1,6 +1,8 @@
 package com.oh.twin_peaks_graph.controller;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.neo4j.helpers.collection.IteratorUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,14 @@ import com.oh.twin_peaks_graph.repository.PersonRepository;
 
 @Controller
 public class PersonController {
+	private static final Map<String, String> COLOURS = new HashMap<String, String>();
+	static {
+		COLOURS.put("SEXUAL", "#8f0e2e");
+		COLOURS.put("FBI", "#626262");
+		COLOURS.put("FAMILY", "#009045");
+		COLOURS.put("FRIENDSHIP", "#009bdb");
+		COLOURS.put("DRUGS", "#ffffff");
+	}
 
 	@Autowired
 	private PersonRepository repo;
@@ -73,6 +83,8 @@ public class PersonController {
 	public String graphPeople(Model model, @PathVariable String type) {
 		Iterable<PersonRelationship> people = repo.getRelationship(type);
 		
+		model.addAttribute("type", type);
+		model.addAttribute("colour", COLOURS.get(type));
 		if (people != null)
 			model.addAttribute("people", IteratorUtil.asCollection(people));
 		else
