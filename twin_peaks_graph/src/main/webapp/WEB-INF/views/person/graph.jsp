@@ -31,7 +31,7 @@
 							'border-color': '${colour}',
 							'border-width': 3,
 							'border-opacity': 0.5,
-							'content': 'data(id)',
+							'label': 'data(name)',
 							'font-size': 16,
 							'color': '${colour}'
 						})
@@ -61,8 +61,8 @@
 				            
 							// Load names
 							<c:forEach items="${people}" var="relationship">
-								{ data: { id: '${relationship.person1.id}' } },
-								{ data: { id: '${relationship.person2.id}' } },
+								{ data: { id: '${relationship.person1.id}' , name: '${relationship.person1.name}' } },
+								{ data: { id: '${relationship.person2.id}' , name: '${relationship.person2.name}'} },
 							</c:forEach>
 							//End load names
 						],
