@@ -23,6 +23,37 @@ a:hover {
 	text-decoration: underline;
 }
 
+.index{
+	position: absolute;
+	top: 50%;
+	margin-top: -250px;/* half of #content height*/
+	left: 0;
+	width: 100%;
+}
+
+img.logo {
+	width: 350px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+img.powered {
+	width: 40px;
+}
+
+.menu {
+	width: 550px;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.menu a {
+	font-size: 15px;
+}
+
 a.sexual {
 	color: #8f0e2e;
 }
@@ -39,26 +70,8 @@ a.friendship {
 	color: #009bdb;	
 }
 
-img.logo {
-	width: 350px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 0 auto;
-	display: block;
-}
-
-img.powered {
-	width: 75px;
-}
-
-.menu {
-	width: 550px;
-	padding-top: 150px;
-	margin: 0 auto;
-}
-
-.menu a {
-	font-size: 18px;
+a.sheriff {
+	color: #ddc22a;	
 }
 
 #cy {
@@ -67,5 +80,10 @@ img.powered {
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+.qtip-bootstrap {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
 }
 

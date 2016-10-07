@@ -10,9 +10,19 @@
 	<h1>${type} LINK</h1>
 	
 	<div id="cy"></div>	
+	<!-- cytoscape -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+	
+	<!-- cytoscape spread layout-->
 	<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-spread/1.0.9/cytoscape-spread.js"></script>
+
+	<!-- cytoscape qtip-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css" />	
+	<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-qtip/2.2.5/cytoscape-qtip.js"></script>
+	
+	<link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet" />
 	
 	<script>
 		$(function(){   
@@ -97,12 +107,45 @@
 			    
 				if( nodes.empty() ){ break; }
 				}
-			        
-				var delay = 0;
-				var duration = 500;
-		
-			  
+
 			}); // on tap
+			
+			// Show BIO 1
+			<c:forEach items="${people}" var="relationship">
+				cy.$('#${relationship.person1.id}').qtip({
+				  content: '${relationship.person1.bio}',
+				  position: {
+				    my: 'top center',
+				    at: 'bottom center'
+				  },
+				  style: {
+				    classes: 'qtip-bootstrap',
+				    tip: {
+				      width: 16,
+				      height: 8
+				    }
+				  }
+				});
+			</c:forEach>
+			// End Show BIO 1
+			// Show BIO 2
+			<c:forEach items="${people}" var="relationship">
+				cy.$('#${relationship.person2.id}').qtip({
+				  content: '${relationship.person2.bio}',
+				  position: {
+				    my: 'top center',
+				    at: 'bottom center'
+				  },
+				  style: {
+				    classes: 'qtip-bootstrap',
+				    tip: {
+				      width: 16,
+				      height: 8
+				    }
+				  }
+				});
+			</c:forEach>
+			// End Show BIO 2
 		});		
 	</script>
 </t:layout>

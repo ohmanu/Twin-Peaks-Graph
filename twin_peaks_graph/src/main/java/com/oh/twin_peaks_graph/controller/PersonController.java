@@ -26,11 +26,18 @@ public class PersonController {
 		COLOURS.put("FAMILY", "#009045");
 		COLOURS.put("FRIENDSHIP", "#009bdb");
 		COLOURS.put("DRUGS", "#ffffff");
+		COLOURS.put("SHERIFF_DEPARTMEN", "#ddc22a");
 	}
 
 	@Autowired
 	private PersonRepository repo;
 
+	@RequestMapping(value = "/about", method = RequestMethod.GET, headers = "Accept=text/html")
+	public String about() {
+
+		return "/about";
+	}
+	
 	@RequestMapping(value = "/person/{id}", method = RequestMethod.GET, headers = "Accept=text/html")
 	public String singlePersonView(Model model, @PathVariable String id) {
 		Person person = repo.findOne(Long.valueOf(id));
