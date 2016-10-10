@@ -113,7 +113,7 @@
 			// Show BIO 1
 			<c:forEach items="${people}" var="relationship">
 				cy.$('#${relationship.person1.id}').qtip({
-				  content: '${relationship.person1.bio}',
+				  content: '${relationship.person1.bio}<br><br>Played by: ${relationship.person1.played_by}',
 				  position: {
 				    my: 'top center',
 				    at: 'bottom center'
@@ -131,7 +131,7 @@
 			// Show BIO 2
 			<c:forEach items="${people}" var="relationship">
 				cy.$('#${relationship.person2.id}').qtip({
-				  content: '${relationship.person2.bio}',
+				  content: '${relationship.person2.bio}<br><br>Played by: ${relationship.person2.played_by}',
 				  position: {
 				    my: 'top center',
 				    at: 'bottom center'

@@ -15,13 +15,12 @@
 			<a class="fbi" href="relationship/FBI">FBI</a>
 			<a class="family" href="relationship/FAMILY">FAMILY</a>
 			<a class="friendship" href="relationship/FRIENDSHIP">FRIENDSHIP</a>
-			<a class="sheriff" href="relationship/SHERIFF_DEPARTMEN">SHERIFF DEPARTMEN</a>
+			<a class="sheriff" href="relationship/SHERIFF_DEPARTMEN">SHERIFF_DEPARTMEN</a>
+			<a class="married" href="relationship/MARRIED">MARRIED</a>
 			</p>
 			
 			<footer class="footer">
 				<p>Manuel Casas ©</p>
-				<img class="powered" src="<c:url value='/images/neo4j.png'/>" alt="Neo4j"/>
-				<img class="powered" src="<c:url value='/images/cytoscape.png'/>" alt="Cytoscape"/>	
 			</footer>
 		</div>
 	</div>

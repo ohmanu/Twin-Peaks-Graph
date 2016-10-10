@@ -27,6 +27,7 @@ public class PersonController {
 		COLOURS.put("FRIENDSHIP", "#009bdb");
 		COLOURS.put("DRUGS", "#ffffff");
 		COLOURS.put("SHERIFF_DEPARTMEN", "#ddc22a");
+		COLOURS.put("MARRIED", "#ef95ac");
 	}
 
 	@Autowired

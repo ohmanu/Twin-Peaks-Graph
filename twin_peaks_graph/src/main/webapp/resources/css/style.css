@@ -23,12 +23,26 @@ a:hover {
 	text-decoration: underline;
 }
 
-.index{
+.index {
 	position: absolute;
 	top: 50%;
 	margin-top: -250px;/* half of #content height*/
 	left: 0;
 	width: 100%;
+}
+
+.about {
+	position: absolute;
+	top: 50%;
+	margin-top: -250px;/* half of #content height*/
+	left: 0;
+	width: 100%;
+}
+
+.bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	padding: 20px;
 }
 
 img.logo {
@@ -46,8 +60,11 @@ img.powered {
 .menu {
 	width: 550px;
 	margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
 }
 
 .menu a {
@@ -72,6 +89,10 @@ a.friendship {
 
 a.sheriff {
 	color: #ddc22a;	
+}
+
+a.married {
+	color: #ef95ac;	
 }
 
 #cy {
