@@ -20,7 +20,7 @@
 			</p>
 			
 			<footer class="footer">
-				<p>Manuel Casas ©</p>
+				<p>@Oh_Manu</p>
 			</footer>
 		</div>
 	</div>
